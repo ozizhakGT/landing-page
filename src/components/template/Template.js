@@ -5,7 +5,6 @@ import LeadForm from '../formTypes/LeadForm';
 class Template extends React.Component {
 
     rednerPoints() {
-        console.log(this.props.translate.points)
         return this.props.translate.points ? this.props.translate.points.map(point => <li key={point}>{point}</li>) : '';
     }
     renderForm() {

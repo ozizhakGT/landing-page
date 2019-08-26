@@ -15,15 +15,23 @@ export default {
                 'More Than 10 Years Of Monetizing Traffic Experience'
             ],
             form: {
-                privacy: '<div>blabla</div>',
                 register: {
                     title: 'Create Account',
                     subtitle: 'You Bring The Traffic, We Do The Magic',
-                    fields: ['Email', 'Password', 'Confirm Password']
+                    button: 'Join Now'
                 },
                 lead: {
                     title: 'blab balbal'
-                }
+                },
+                privacy: 'By Clicking the button below, you are agreeing to the AdMaven',
+                privacy_link_1: {
+                    link: '#',
+                    text: 'Terms and Conditions'
+                },
+                privacy_link_2: {
+                    link: '#',
+                    text: 'Privacy Policy'
+                },
             }
         },
         ru: {
