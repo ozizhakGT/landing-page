@@ -1,0 +1,28 @@
+.container {
+    padding: 50px 400px;
+    .logo {
+        margin-bottom: 35px;
+    }
+}
+.first {
+    width: 100%;
+    min-height: 680px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .form {
+            color: black;
+            width: 760px;
+            height: 520px;
+            background: white;
+            margin: 0 60px;
+            transform: translateY(-30px)
+        }
+    }
+}
+
+.margin-top-md {
+    margin-top: 30px
+}
