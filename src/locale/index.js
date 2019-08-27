@@ -14,6 +14,7 @@ export default {
                 'Enhanced Reporting & Analytics',
                 'More Than 10 Years Of Monetizing Traffic Experience'
             ],
+            middleSentence: '“One of the best monetization tools out there ”',
             form: {
                 register: {
                     title: 'Create Account',

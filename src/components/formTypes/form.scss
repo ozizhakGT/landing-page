@@ -65,6 +65,11 @@
             color: white;
         }
 
+        &:disabled {
+            background: lightgrey;
+            color: grey;
+        }
+
         margin-bottom: 20px;
     }
 }

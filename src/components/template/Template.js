@@ -3,6 +3,18 @@ import RegisterForm from '../formTypes/RegisterForm';
 import LeadForm from '../formTypes/LeadForm';
 
 class Template extends React.Component {
+    renderSecondPart() {
+        return (
+            <section className="middlePart">
+                <p>“</p>
+                <p>{this.props.translate.middleSentence}</p>
+                <div>
+                    <p>Learn More</p>
+                    <div>&#8595;</div>
+                </div>
+            </section>
+        )
+    }
 
     rednerPoints() {
         return this.props.translate.points ? this.props.translate.points.map(point => <li key={point}>{point}</li>) : '';
@@ -34,6 +46,7 @@ class Template extends React.Component {
                     </div>
                 </div>
             </section>
+            {this.renderSecondPart()}
             </div>
         );
     }

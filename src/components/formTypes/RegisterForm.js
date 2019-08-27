@@ -11,7 +11,6 @@ class RegisterForm extends React.Component {
 
     renderInput = ({input, label, type, meta}) => {
         const className = meta.touched && meta.error ? 'error' : '';
-        console.log(meta)
         return (
             <div className="field">
                 <label>{label}</label>
@@ -26,7 +25,7 @@ class RegisterForm extends React.Component {
     }
 
     render() {
-        const {content} = this.props
+        const {content, valid} = this.props
         if(!content) {
             return <div>Loading ...</div>
         }
@@ -38,7 +37,7 @@ class RegisterForm extends React.Component {
                     <Field name="email" component={this.renderInput} label="Email" type="email" />
                     <Field name="password" component={this.renderInput} label="Password" type="password" />
                     <Field name="confirmPassword" component={this.renderInput} label="Confirm Password" type="password" />
-                    <button className="btn">{content.register.button}</button>
+                    <button className="btn" disabled={!valid}>{content.register.button}</button>
                 </form>
                 <div className="privacy">
                     <small>
