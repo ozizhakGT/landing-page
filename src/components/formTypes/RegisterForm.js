@@ -37,11 +37,11 @@ class RegisterForm extends React.Component {
                     <Field name="email" component={this.renderInput} label="Email" type="email" />
                     <Field name="password" component={this.renderInput} label="Password" type="password" />
                     <Field name="confirmPassword" component={this.renderInput} label="Confirm Password" type="password" />
-                    <button className="btn" disabled={!valid}>{content.register.button}</button>
+                    <button className="btn btn-form" disabled={!valid}>{content.register.button}</button>
                 </form>
                 <div className="privacy">
                     <small>
-                        {content.privacy} <a href={content.privacy_link_1.link}>{content.privacy_link_1.text}</a> and <a href={content.privacy_link_2.link}>{content.privacy_link_2.text}</a>
+                        {content.privacy} <a href={content.privacy_link_1.link} target="blank">{content.privacy_link_1.text}</a> and <a href={content.privacy_link_2.link} target="blank">{content.privacy_link_2.text}</a>
                     </small>
                 </div>
             </div>

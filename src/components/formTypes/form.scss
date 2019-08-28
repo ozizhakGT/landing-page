@@ -47,24 +47,7 @@
             border: #c36c6c 1px solid;
         }
     }
-    .btn {
-        color: #141163;
-        font-size: 22px;
-        font-weight: 700;
-        cursor: pointer;
-        width: 80%;
-        border: none;
-        border-radius: 5px; 
-        padding: 10px;
-        background: #54ffc1;
-        letter-spacing: 1.4px;
-        transition: all .2s;
-
-        &:hover {
-            background: #3394ce;
-            color: white;
-        }
-
+    .btn-form {
         &:disabled {
             background: lightgrey;
             color: grey;
