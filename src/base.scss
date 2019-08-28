@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap');
 @import './components/template/styles/tamplate.scss';
-@import './components/template/styles/popPush.scss';
+@import './components/pop-push/popPush.scss';
 @import './components/formTypes/form.scss';
 
 
@@ -9,9 +9,6 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
-
-
 
 
 // ANIMATIONS

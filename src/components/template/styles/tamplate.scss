@@ -1,21 +1,22 @@
 .template {
     opacity: 0;
     animation: fadeIn .7s .4s forwards;
-    .container {
-        padding: 40px 15%;
-
-        .logo {
-            margin-bottom: 35px;
-        }
-    }
 
     .first {
         width: 100%;
         min-height: 680px;
 
+        .container {
+            padding: 41px 390px;
+
+            .logo {
+                margin-bottom: 35px;
+            }
+        }
+
         .wrapper {
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
 
             .form {
                 color: black;
@@ -30,5 +31,44 @@
 
     .margin-top-md {
         margin-top: 30px
+    }
+}
+
+
+
+
+// RESPONSIVE
+
+@media only screen and (max-width: 1600px) {
+    .template {
+        .first {
+            .container {
+                padding: 20px 10%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .template {
+        .first {
+            .container {
+                padding: 20px 1%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .template {
+        .first {
+            .container {
+                padding: 10px;
+            }
+
+            .wrapper {
+                flex-direction: column;
+            }
+        }
     }
 }

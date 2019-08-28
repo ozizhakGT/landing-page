@@ -1,8 +1,9 @@
 .popPush {
     color: white;
     font-weight: lighter;
+
     .backgroundTop {
-        background-image: url(../../../assets/img/admaven-background-new.jpg);
+        background-image: url(../../assets/img/admaven-background-new.jpg);
         background-position: top;
         background-repeat: no-repeat;
         background-size: 150%;
@@ -11,11 +12,12 @@
             .title {
                 font-size: 34px;
                 font-weight: normal;
-    
+
                 &__1 {
                     color: #54ffc1;
                     font-weight: 700;
                 }
+
                 &__sub {
                     font-weight: inherit;
                     margin: 55px auto;
@@ -31,49 +33,57 @@
             }
         }
     }
+
     .middlePart {
         color: grey;
         font-size: 25px;
         font-weight: 600;
         text-align: center;
 
-        & > p:first-child {
+        &>p:first-child {
             font-size: 45px;
             transform: translateX(-330px);
             margin-top: 20px;
         }
-        & > p:nth-child(2) {
+
+        &>p:nth-child(2) {
             font-style: italic;
             margin: 20px auto;
         }
-        & > div {
+
+        &>div {
             font-weight: lighter;
             cursor: pointer;
             transition: .5s all;
-            
+
             div {
                 font-size: 30px;
                 animation: upDown 1s infinite;
-                
+
             }
+
             &:hover {
                 color: black;
             }
         }
     }
+
     .bottomPart {
         display: none;
         opacity: 0;
         animation: fadeIn .7s .5s forwards;
+
         .firstPart {
             display: flex;
             justify-content: center;
             font-weight: lighter;
+
             .signwrapper {
                 color: black;
                 text-align: center;
                 width: 300px;
                 padding: 40px;
+
                 i {
                     color: #1e73be;
                     border: 1px #1e73be solid;
@@ -84,16 +94,19 @@
                     padding: 35px;
                     border-radius: 100%;
                 }
+
                 h2 {
                     font-weight: 500;
                 }
-                & > *:not(:last-child) {
+
+                &>*:not(:last-child) {
                     margin-bottom: 10px
                 }
             }
         }
+
         .secondPart {
-            background-image: url(../../../assets/img/admaven-visual_01-3.jpg);
+            background-image: url(../../assets/img/admaven-visual_01-3.jpg);
             background-position: bottom;
 
             h1 {
@@ -101,6 +114,7 @@
                 text-align: center;
                 padding: 15px 30px;
             }
+
             .reviewsWrapper {
                 position: relative;
                 display: flex;
@@ -110,7 +124,7 @@
                 height: 480px;
                 flex-wrap: wrap;
                 margin: 0 auto;
-                
+
                 .review {
                     background-color: white;
                     width: 270px;
@@ -130,14 +144,17 @@
 
 
 
-                    a:link, a:visited {
+                    a:link,
+                    a:visited {
                         color: #1e73be;
                         font-size: 22px;
                         text-decoration: none;
+
                         &:hover {
                             text-decoration: underline;
                         }
                     }
+
                     p {
                         color: #898989;
                         font-style: italic;
@@ -163,7 +180,7 @@
         cursor: pointer;
         width: 80%;
         border: none;
-        border-radius: 5px; 
+        border-radius: 5px;
         padding: 10px;
         background: #54ffc1;
         letter-spacing: 1.4px;
